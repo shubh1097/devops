@@ -1,0 +1,29 @@
+Create repository from platform's interface (GitHub, Bitbucket, GitLab)
+
+Navigate to directory where you want to create repo
+#cd dir
+
+Initialise a new Git repository using the following command
+#git init
+
+Configure username and email address
+git config --global user.name shubham
+git config --global user.email shubham@gmail.com
+
+Verify
+#git config --list
+
+Add/Create files(code)
+
+Add files to staging area
+#git add .              // . specifies current directory 
+
+Commit the code to local repository
+#git commit -m initial_commit               // -m is commit message
+
+Once you have a remote repository, add it as a remote to your local repository using the git remote add command. Replace <remote-name> with a name for your remote (e.g., "notes"), and <remote-url> with the URL of your remote repository
+#git remote add <remote-name> <remote-url>
+#git remote add xyz https://github.com/shubh1097/xyz.git
+
+Push the code to central repository
+#git push -u notes main                 //main specifies the branch

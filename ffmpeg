@@ -1,0 +1,33 @@
+1.) For streaming video available on local system
+#ffmpeg -stream_loop -1 -i video.mp4 -framerate 25 -f mpegts udp://226.1.1.1:5555
+
+where
+-stream_loop : repeat the streaming (-1 specifies infinite)
+-i : input file
+-framerate : framerate
+-f: output format
+
+2.) For streaming the screen
+#ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :1 -crf 27 -c:v libx264 -preset ultrafast -tune zerolatency -f mpegts udp://226.1.1.1:9999
+
+where
+-video_size : size of the screen
+-i : Display Number on echo$DISPLAY
+-crf : quality
+-c:v : codec
+-preset : preset
+-tune : tune
+-f : output format
+
+3.)  Streaming video in no buffer
+#ffmpeg -stream_loop -1 -i video.mp4 -crf 27 -c:v libx264 -filter:v "setpts=500*PTS" -fflags nobuffer -tune zerolatency -f mpegts udp://226.1.1.1:5555
+
+where
+-stream_loop : repeat the streaming (-1 specifies infinite)
+-i : input file
+-crf : quality
+-c:v : codec
+-filter:v : filters
+-fflags : nobuffer
+-tune : tune
+-f : output format
