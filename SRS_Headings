@@ -1,0 +1,36 @@
+1. Introduction to document
+    1.1 Revision History (Tabular Form)
+    1.2 Purpose and Scope
+    1.3 Requirement Characterstics
+    1.4 Requirement Identification
+    1.5 Abrreviations and Definitions
+        1.5.1 Abrreviations
+        1.5.2 Definitions
+
+2. Software Description
+    2.1 Software Purpose
+    2.2 Software Overview
+    2.3 User Capabilities
+    2.4 General Constraints
+    2.5 Design Constraints
+    2.6 Assumptions and Dependencies
+        2.6.1 Data Dependencies
+        2.6.2 System Infra Dependencies
+        2.6.3 Stakeholder Dependencies
+
+3. Functional Requirements
+3.1.1 [SRS-NAME-001] Requirement1
+        a) Description
+        b) Rationale
+        c) Assumptions & Constraints
+        d) Conditions
+        e) Triggers
+        f) Inputs
+        g) Flows
+        h) Output
+4. Other Requirements
+    4.1 Non Functional 
+        a) Portability
+        b) Maintainability
+        c) Configurability
+        
