@@ -14,8 +14,8 @@
 #git remote add <remote-name> <remote-url>
 #git remote add xyz https://github.com/abc/xyz.git
 
-6. First fetch code from github
-#git fetch https://github.com/abc/xyz.git
+6. Pull code from github first
+#git pull https://github.com/abc/xyz.git
 
 7. Verify
 #git config --list
